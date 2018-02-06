@@ -41,9 +41,11 @@ function FirstReverse1(str) {
 // Approach 2: Use built-in string/array functions
 function FirstReverse2(str) { 
 
-  // first we split the string which creates an array of characters, e.g. ['c','a','t']
+  // first we split the string which creates an array of characters
+  // e.g. ['c','a','t']
   // then we call the reverse function on this array 
-  // and finally we turn the reversed array back into a string using the join function
+  // and finally we turn the reversed array back into a string
+  // using the join function
   return str.split('').reverse().join('');
          
 }
