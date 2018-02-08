@@ -22,6 +22,9 @@ function isPangram(input){
     // For each letter in the alphabet
     // Find this letter in the input
     // If a letter is not found in the input, it's not a pangram!
+    // Note: you cannot use a forEach to loop through the array here
+    // because there is no way to break out of the loop:
+    // https://stackoverflow.com/questions/2641347/how-to-short-circuit-array-foreach-like-calling-break
     for (i=0; i<=alphaArr.length-1; i++){
         if (input.indexOf(alphaArr[i]) === -1){
             // console.log(alphaArr[i] + " not found")
