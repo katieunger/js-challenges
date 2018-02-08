@@ -15,6 +15,11 @@ input2 = "fun times!";
 
 // Output:"gvO Ujnft!"
 
+// Found a test case which doesn't work:
+input3 = "zzzztop";
+
+// Output:"aaaaUpq"
+
 function LetterChanges(str) { 
 	var newString = "";
 	for (i=0; i<str.length; i++){
@@ -47,3 +52,4 @@ function LetterChanges(str) {
 
 LetterChanges(input1);
 LetterChanges(input2);
+LetterChanges(input3);
