@@ -39,6 +39,7 @@ function isPangram(input){
     }
 }
 
+// Approach 2
 function isPangram2(input) {
     // Regex explanation:
     // 1st Capturing Group ([a-z])
