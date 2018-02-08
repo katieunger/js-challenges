@@ -9,19 +9,21 @@
 // of space-separated integers.
 
 
-input = [1,2,3,4,5] 
-   
+input = [1,2,3,4,5]    
 
 function rotateLeft(arr, numOfRotations){
-    for (i=0; i<=numOfRotations; i++){
+    for (i=0; i<numOfRotations; i++){
         rotate(arr);
     }
     console.log(arr.join(" "));
 }
 
 function rotate(arr){
-    var last = arr.pop();
-    arr = arr.unshift(last);
+    var first = arr.shift();
+    arr = arr.push(first);
+    // Right rotation!
+    // var last = arr.pop();
+    // arr = arr.unshift(last);
 }
 
 rotateLeft(input, 2);
