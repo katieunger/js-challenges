@@ -18,7 +18,7 @@ input2 = "fun times!";
 // Found a test case which doesn't work:
 input3 = "zzzztop";
 
-// Output:"aaaaUpq"
+// Output:"AAAAUpq"
 
 function LetterChanges(str) { 
 	var newString = "";
