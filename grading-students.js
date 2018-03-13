@@ -30,7 +30,7 @@ function solve(arr){
 	for (var i=0; i<arr.length; i++){
 		var grade = arr[i];
 		var diff = 5 - (arr[i]%5)
-		if(diff <3 && grade > 38){
+		if(diff < 3 && grade >= 38){
 			grade = grade + diff;
 		}
 		console.log(grade);
